@@ -11,4 +11,4 @@ Create a tmpdir.
   >>> transform.source(None)
   
   >>> transform.target(targetpath)
-  <agx.io.directory.directory.Directory object at ...>
+  <node.ext.directory.directory.Directory object at ...>

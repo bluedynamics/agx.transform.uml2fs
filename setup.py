@@ -31,7 +31,7 @@ setup(name='agx.transform.uml2fs',
       install_requires=[
           'setuptools',
           'agx.core',
-          'agx.io.directory',
+          'node.ext.directory',
       ],
       extras_require = dict(
           test=[

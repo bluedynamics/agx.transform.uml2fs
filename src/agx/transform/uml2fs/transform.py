@@ -7,7 +7,7 @@ from zope.component import getUtility
 from zodict.interfaces import IRoot
 from agx.core.interfaces import ITransform
 from agx.core.interfaces import ITarget
-from agx.io.directory import Directory
+from node.ext.directory import Directory
 
 class UML2FS(object):
     
