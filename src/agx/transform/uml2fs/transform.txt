@@ -11,4 +11,4 @@ Create a tmpdir.
   >>> transform.source(None)
   
   >>> transform.target(targetpath)
-  <Directory object '/tmp/.../target' at ...>
+  <Directory object '/.../target' at ...>
