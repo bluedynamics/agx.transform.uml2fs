@@ -9,24 +9,25 @@ from agx.core.interfaces import ITransform
 from agx.core.interfaces import ITarget
 from node.ext.directory import Directory
 
+
 class UML2FS(object):
-    
+
     implements(ITransform)
-    
+
     def __init__(self, name):
         self.name = name
-    
+
     def source(self, path):
         return None
-    
+
     def target(self, path):
         target = Directory(path)
-        
+
         # XXX: hook elsewhere, this ignores are self contained buildout related
         target.ignores = [
             'eggs', 'devsrc', 'parts', 'bin', 'develop-eggs', 'var',
         ]
-        
+
         alsoProvides(target, IRoot)
         alsoProvides(target, ITarget)
         return target

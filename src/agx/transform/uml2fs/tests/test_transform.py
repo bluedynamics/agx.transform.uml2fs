@@ -18,13 +18,14 @@ TESTFILES = [
     '../transform.txt',
 ]
 
+
 def test_suite():
     XMLConfig('meta.zcml', zope.component)()
     XMLConfig('configure.zcml', agx.transform.uml2fs)()
-    
+
     return unittest.TestSuite([
         doctest.DocFileSuite(
-            file, 
+            file,
             optionflags=optionflags,
             globs={'interact': interact,
                    'pprint': pprint},
@@ -32,5 +33,4 @@ def test_suite():
     ])
 
 if __name__ == '__main__':
-    unittest.main(defaultTest='test_suite') 
-
+    unittest.main(defaultTest='test_suite')
