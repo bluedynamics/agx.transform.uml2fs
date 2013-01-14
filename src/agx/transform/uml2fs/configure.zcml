@@ -1,11 +1,10 @@
 <configure xmlns="http://namespaces.zope.org/zope"
            xmlns:agx="http://namespaces.zope.org/agx">
-  
+
   <include package="agx.core" />
-  
+
   <agx:transform
     name="uml2fs"
-    class=".transform.UML2FS"
-  />
+    class=".transform.UML2FS" />
 
 </configure>
