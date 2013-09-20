@@ -24,7 +24,7 @@ class UML2FS(object):
         target = Directory(path)
         # XXX: hook elsewhere, this ignores are self contained buildout related
         target.ignores = [
-            'eggs', 'devsrc', 'parts', 'bin', 'develop-eggs', 'var',
+            'eggs', 'devsrc', 'parts', 'bin', 'develop-eggs', 'var', 'env', 'local', 'lib',
         ]
         alsoProvides(target, IRoot)
         alsoProvides(target, ITarget)
